@@ -64,8 +64,7 @@ export class Login extends Component {
                 <button
                 onClick={this.login}
                 className="btn btn-primary">Login</button>
-                <small className="float-right">Dont have any account? <Link to="/signup">SignUp</Link></small>
-                
+                <small className="float-right">Dont have any account? <Link to="/signup">SignUp</Link></small>                
                 </form>
             </div>
         )
