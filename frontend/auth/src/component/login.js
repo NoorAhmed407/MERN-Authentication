@@ -9,7 +9,6 @@ export class Login extends Component {
         password : ''
     }
 
-
     login = e =>{
         e.preventDefault();
         axios.post('http://localhost:4000/api/auth', this.state)

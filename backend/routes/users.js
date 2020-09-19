@@ -11,7 +11,7 @@ router.post('/',(req,res)=>{
     //Check Simple Validation
     if(!name || !email || !password)
         {
-            return res.send('Please Enter all the Fields');
+        if(user) return res.status(400).json({msg: "Please Enter All the fields"});
         }
 
     //Check For Existing User
